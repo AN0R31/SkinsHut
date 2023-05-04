@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Coinflip!{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('assets/styles/general.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/styles/bet/coinflip.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/javascripts/bet/coinflip.js') }}" defer></script>
+    <script src="{{ asset('assets/javascripts/general.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+    {% include './general/header.html.twig' %}
+
+    <script>
+        let quheads = "{{ asset('assets/img/bet/coinflip/coinCT.png') }}";
+        let qutails = "{{ asset('assets/img/bet/coinflip/coinT.png') }}";
+    </script>
+
+    <div class="game-title">Coinflip</div>
+
+    <div class="sections-container">
+        <div class="game-section section">
+            <div class="background-image-full"></div>
+            <div class="coin" id="coin">
+                <div class="heads">
+                    <img class="coin-background" src="{{ asset('assets/img/bet/coinflip/coinCT.png') }}">
+                </div>
+                <div class="tails">
+                    <img class="coin-background" src="{{ asset('assets/img/bet/coinflip/coinT.png') }}">
+                </div>
+            </div>
+            <div class="bet-line" id="bet-line">
+                <label for="amount">Bet</label>
+                <input id="amount" type="text">
+                <div>on</div>
+                <div>
+                    <label for="ct" class="label"><img class="radio-image" id="CTlabel"
+                                         src="{{ asset('assets/img/bet/coinflip/coinCT.png') }}"></label>
+                    <input type="radio" name="side" id="ct" value="CT">
+                </div>
+                <div>
+                    <label for="t"><img class="radio-image" id="Tlabel"
+                                        src="{{ asset('assets/img/bet/coinflip/coinT.png') }}"></label>
+                    <input type="radio" name="side" id="t" value="T">
+                </div>
+            </div>
+            <div class="create-button" id="create-button" onclick="createBattle({{ app.user.id }})">Create Battle!</div>
+            <p id="info-area" style="display: none">Waiting for an opponent to join...</p>
+            <div class="add-bot-button" id="join-bot" onclick="addBotAsPlayer2({{ app.user.id }})">Play with BOT!</div>
+        </div>
+        {% include './general/live_feed.html.twig' %}
+    </div>
+
+    <script>
+        getLastMatches()
+    </script>
+{% endblock %}

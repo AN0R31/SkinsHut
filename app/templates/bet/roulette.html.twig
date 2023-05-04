@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Coinflip!{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('assets/styles/general.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/styles/bet/roulette.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('assets/javascripts/bet/roulette.js') }}" defer></script>
+    <script src="{{ asset('assets/javascripts/general.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+    {% include './general/header.html.twig' %}
+
+    <script>
+        let winner = {{ roulette.winner == null ? 'null' : roulette.winner }};
+        let createdAt = '{{ roulette.createdAt|date('i:s') }}';
+        let rouletteWaitTime = 15;
+    </script>
+
+    <div class="game-title">Roulette</div>
+
+    <div class="sections-container">
+        <div class="game-section section">
+
+            <div class="history-container">
+                <div class='history'>
+                    <div class="history-text">Last 5 rolls:</div>
+                    <div class="square-roulette" id="history1"></div>
+                    <div class="square-roulette" id="history2"></div>
+                    <div class="square-roulette" id="history3"></div>
+                    <div class="square-roulette" id="history4"></div>
+                    <div class="square-roulette" id="history5"></div>
+                </div>
+
+                <div id="last100">
+                    <div class="history-text">Last 100 rolls:</div>
+                    <div class="square-roulette card green" id="last100-1"></div>
+                    <div class="square-roulette card red" id="last100-2"></div>
+                    <div class="square-roulette card black" id="last100-3"></div>
+                </div>
+            </div>
+
+            <div class='roulette-wrapper'>
+                <div class='selector'></div>
+                <div class='wheel'></div>
+            </div>
+            {#            <div> #}
+            {#                <input placeholder='outcome'> #}
+            {#                <button> #}
+            {#                    Spin Wheel #}
+            {#                </button> #}
+            {#            </div> #}
+
+            <div class="bet-line" id="bet-line">
+                <label for="amount">Bet</label>
+                <input id="amount" type="text">
+                <div>on</div>
+                <div class="square-roulette card green to-select" id="selectGreen" data-value="0">14X</div>
+                <div class="square-roulette card red to-select" id="selectRed" data-value="1">2X</div>
+                <div class="square-roulette card black to-select" id="selectBlack" data-value="2">2X</div>
+            </div>
+
+            <div id="my-bets-container">
+                <div class="history-text" id="my-bets-text">My current bets:</div>
+                <div id="my-bets"></div>
+            </div>
+
+            <div class="join-button" id="join-button" onclick="joinRoulette()">Join Roulette!</div>
+
+            <div id="info-text"></div>
+
+        </div>
+        {% include './general/live_feed.html.twig' %}
+    </div>
+
+    <script>
+        getLastMatches()
+    </script>
+{% endblock %}

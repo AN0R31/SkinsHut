@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="header-logo" onclick="redirectToRoute('{{ path('app_home', {}, relative = false) }}')">SKINS <b class="hut">HUT</b></div>
+    <div class="header-elements-container">
+        <div class="header-element" onclick="redirectToRoute('{{ path('coinflip', {}, relative = false) }}')">COIN FLIP</div>
+        <div class="header-element" onclick="redirectToRoute('{{ path('roulette', {}, relative = false) }}')">ROULETTE</div>
+        <div class="header-element">DROPS</div>
+        <div class="header-element">CRASH</div>
+        <div class="header-balance" id="balance" data-id="{{ app.user.id }}">{{ app.user.balance }} COINS</div>
+    </div>
+</div>

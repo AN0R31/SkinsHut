@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('assets/styles/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/styles/general.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/javascripts/general.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    {% include './general/header.html.twig' %}
+
+    <div class="game-title">Welcome home!</div>
+
+    <div class="sections-container">
+        <div class="game-section section"></div>
+        {% include './general/live_feed.html.twig' %}
+    </div>
+
+    <script>
+        getLastMatches()
+    </script>
+{% endblock %}
