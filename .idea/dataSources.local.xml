@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PS-223.8836.42">
+  <component name="dataSourceStorageLocal" created-in="PS-231.8770.68">
     <data-source name="triple_skin@localhost" uuid="b503f49f-db7c-4a4c-ae0b-e4b05f6abf05">
-      <database-info product="MariaDB" version="10.9.3-MariaDB-1:10.9.3+maria~ubu2204" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="3.0.7" dbms="MARIADB" exact-version="10.9.3" exact-driver-version="3.0">
+      <database-info product="MariaDB" version="10.11.3-MariaDB-1:10.11.3+maria~ubu2204" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="3.0.7" dbms="MARIADB" exact-version="10.11.3" exact-driver-version="3.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>

@@ -2,20 +2,59 @@
 
 {% block title %}Register{% endblock %}
 
-{% block body %}
-    {% for flash_error in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
-    {% endfor %}
-
-    <h1>Register</h1>
-
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+{% block stylesheets %}
+    <link href="{{ asset('assets/styles/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/styles/general.css') }}" rel="stylesheet">
 {% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/javascripts/general.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    {% include './general/header.html.twig' %}
+
+    <div class="game-title">Let's get you started!</div>
+
+    <div class="sections-container">
+        <div class="game-section section">
+            <div class="info-title">Unlock your account</div>
+            <ul class="info-ul">
+                <li class="info-li">You can register an account by signing in with Steam</li>
+                <li class="info-li">After that, your account will be automatically created for you</li>
+                <li class="info-li">As a gift for registering, you will get 100 free coins!</li>
+                <li class="info-li">You will also get an additional 15% bonus on your first deposit</li>
+            </ul>
+            <form method="POST" action="/steamLogin" style="width: 100%; display: flex; justify-content: center;">
+                <button type="submit" class="steam-button">Sign in using Steam</button>
+            </form>
+        </div>
+        {% include './general/live_feed.html.twig' %}
+    </div>
+
+    <script>
+        getLastMatches()
+    </script>
+{% endblock %}
+
+{# {% block body %} #}
+{#    {% for flash_error in app.flashes('verify_email_error') %} #}
+{#        <div class="alert alert-danger" role="alert">{{ flash_error }}</div> #}
+{#    {% endfor %} #}
+
+{#    <h1>Register</h1> #}
+
+{#    {{ form_start(registrationForm) }} #}
+{#        {{ form_row(registrationForm.email) }} #}
+{#        {{ form_row(registrationForm.plainPassword, { #}
+{#            label: 'Password' #}
+{#        }) }} #}
+{#        {{ form_row(registrationForm.agreeTerms) }} #}
+
+{#        <button type="submit" class="btn">Register</button> #}
+{#    {{ form_end(registrationForm) }} #}
+
+{#    <form method="POST" action="/steamLogin"> #}
+{#        <button type="submit" class="btn">Login Via Steam</button> #}
+{#    </form> #}
+{# {% endblock %} #}

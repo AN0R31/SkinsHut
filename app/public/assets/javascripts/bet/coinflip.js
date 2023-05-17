@@ -1,6 +1,7 @@
 let isBattleOngoing = false
 
 function flip(result, winner, game_id) {
+    console.log(result, winner, game_id)
     let coin = document.querySelector(".coin");
     let i = 1;
 

@@ -4,7 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="531eecd5-fc95-4e5b-9fbd-472ce342d799" name="Changes" comment="Symfony 6.2.6 Initialisation" />
+    <list default="true" id="531eecd5-fc95-4e5b-9fbd-472ce342d799" name="Changes" comment="Symfony 6.2.6 Initialisation">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b503f49f-db7c-4a4c-ae0b-e4b05f6abf05.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b503f49f-db7c-4a4c-ae0b-e4b05f6abf05.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/cache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/cache.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/debug.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/debug.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/mailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/mailer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/messenger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/messenger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/monolog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/notifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/notifier.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/sensio_framework_extra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/sensio_framework_extra.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/validator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/validator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/preload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230329095541.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230329095541.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230329124246.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230329124246.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230329142905.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230329142905.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230329145055.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230329145055.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230329172528.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230329172528.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230331060004.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230331060004.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230401083923.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230401083923.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230401125837.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230401125837.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230401142118.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230401142118.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20230401143635.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20230401143635.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/img/bet/coinflip/coinCT.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/img/bet/coinflip/coinCT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/img/bet/coinflip/coinT.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/img/bet/coinflip/coinT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/img/general/live.gif" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/img/general/live.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/img/general/purple.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/img/general/purple.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/javascripts/bet/coinflip.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/javascripts/bet/coinflip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/javascripts/bet/coinflip_join.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/javascripts/bet/coinflip_join.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/javascripts/bet/roulette.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/javascripts/bet/roulette.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/javascripts/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/javascripts/general.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/styles/bet/coinflip.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/styles/bet/coinflip.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/styles/bet/roulette.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/styles/bet/roulette.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/styles/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/styles/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/assets/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/styles/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/AuthenticatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AuthenticatorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/CoinflipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/CoinflipController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/RouletteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/RouletteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Roulette.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Roulette.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/UserRouletteGame.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/UserRouletteGame.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/GameRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/GameRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/RouletteRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/RouletteRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Repository/UserRouletteGameRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/UserRouletteGameRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Security/Authenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Security/Authenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Security/EmailVerifier.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Security/EmailVerifier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/bet/coinflip.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/bet/coinflip.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/bet/coinflip_join.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/bet/coinflip_join.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/bet/roulette.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/bet/roulette.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/general/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/general/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/general/live_feed.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/general/live_feed.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home/landing.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home/landing.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/registration/confirmation_email.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/registration/confirmation_email.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/translations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/translations/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,26 +247,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/andrei/Desktop/CODE/ONGOING PROJECTS/TRIPLE SKIN/app/templates/bet",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/andrei/Desktop/CODE/ONGOING PROJECTS/TRIPLE SKIN/app/templates/bet&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "oracle",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/templates/bet" />
@@ -197,6 +287,15 @@
       <workItem from="1680079244331" duration="247000" />
       <workItem from="1680079513298" duration="60412000" />
       <workItem from="1680287453731" duration="31114000" />
+      <workItem from="1683782517429" duration="66000" />
+      <workItem from="1683782607423" duration="592000" />
+      <workItem from="1683783217487" duration="499000" />
+      <workItem from="1683784242725" duration="305000" />
+      <workItem from="1683784711236" duration="786000" />
+      <workItem from="1684219255983" duration="3824000" />
+      <workItem from="1684223146094" duration="7000" />
+      <workItem from="1684259021528" duration="7557000" />
+      <workItem from="1684322674540" duration="8219000" />
     </task>
     <task id="LOCAL-00001" summary="Symfony 6.2.6 Initialisation">
       <created>1680079399493</created>

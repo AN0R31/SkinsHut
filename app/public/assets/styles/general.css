@@ -67,6 +67,10 @@ a {
     border: 3px solid rgba(183, 0, 255, 0.25);
     border-radius: 5px;
     padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-title {
@@ -81,6 +85,45 @@ a {
     background-color: rgba(0, 0, 0, 0.65);
     border: 3px solid rgba(183, 0, 255, 0.5);
     border-radius: 15px;
+}
+
+.info-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #b700ff;
+    font-size: 30px;
+}
+
+.info-ul {
+    font-size: 20px;
+}
+
+.info-li {
+    margin: 25px 0;
+}
+
+.steam-button {
+    border: 1px solid #a4d007;
+    background-color: #a4d007;
+    color: #e3e8cf;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: background-color;
+}
+
+.steam-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #a4d007;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.diamond {
+    height: 20px;
+    margin-left: 10px;
 }
 
 .list-section {

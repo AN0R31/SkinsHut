@@ -108,6 +108,7 @@ class CoinflipController extends AbstractController
             'Player1' => $user,
             'completedAt' => null,
         ]);
+
         $game->setPlayer2($joiner);
         $game->setFilledAt(new \DateTimeImmutable());
         if ($game->getPlayer1Bet() === 'CT') {
@@ -142,18 +143,18 @@ class CoinflipController extends AbstractController
         if ($result === 'CT') {
             if ($game->getPlayer1Bet() === 'CT') {
                 $winner = 1;
-                $winnerName = $game->getPlayer1()->getEmail();
+                $winnerName = $game->getPlayer1()->getUsername();
             } else {
                 $winner = 2;
-                $winnerName = $game->getPlayer2() === null ? 'BOT' : $game->getPlayer2()->getEmail();
+                $winnerName = $game->getPlayer2() === null ? 'BOT' : $game->getPlayer2()->getUsername();
             }
         } else {
             if ($game->getPlayer1Bet() === 'CT') {
                 $winner = 2;
-                $winnerName = $game->getPlayer2() === null ? 'BOT' : $game->getPlayer2()->getEmail();
+                $winnerName = $game->getPlayer2() === null ? 'BOT' : $game->getPlayer2()->getUsername();
             } else {
                 $winner = 1;
-                $winnerName = $game->getPlayer1()->getEmail();
+                $winnerName = $game->getPlayer1()->getUsername();
             }
         }
 
@@ -191,7 +192,7 @@ class CoinflipController extends AbstractController
         $types = [];
         $key = 1;
         for ($i = 0; $i <= 4; $i++) {
-            $players1[$key] = $games[$i]->getPlayer1()->getEmail();
+            $players1[$key] = $games[$i]->getPlayer1()->getUsername();
             $types[$key] = $games[$i]->getType();
             $winners[$key] = $games[$i]->getWinner();
             $gameIds[$key] = $games[$i]->getId();
@@ -204,7 +205,7 @@ class CoinflipController extends AbstractController
                     if ($games[$i]->getPlayer2() === null) {
                         $players2[$key] = 'GABMLE BOT';
                     } else {
-                        $players2[$key] = $games[$i]->getPlayer2()->getEmail();
+                        $players2[$key] = $games[$i]->getPlayer2()->getUsername();
                     }
                     $eta[$key] = 2;
                 }
@@ -212,7 +213,7 @@ class CoinflipController extends AbstractController
                 if ($games[$i]->getPlayer2() === null) {
                     $players2[$key] = 'GABMLE BOT';
                 } else {
-                    $players2[$key] = $games[$i]->getPlayer2()->getEmail();
+                    $players2[$key] = $games[$i]->getPlayer2()->getUsername();
                 }
                 $eta[$key] = 3;
             }
@@ -279,10 +280,10 @@ class CoinflipController extends AbstractController
             ]);
         } else {
             if ($game->getWinner() === 1) {
-                $winnerName = $game->getPlayer1()->getEmail();
+                $winnerName = $game->getPlayer1()->getUsername();
                 $result = $game->getPlayer1Bet();
             } else {
-                $winnerName = $game->getPlayer2()->getEmail();
+                $winnerName = $game->getPlayer2()->getUsername();
                 $result = $game->getPlayer2Bet();
             }
             return new JsonResponse([
@@ -323,18 +324,18 @@ class CoinflipController extends AbstractController
         if ($result === 'CT') {
             if ($game->getPlayer1Bet() === 'CT') {
                 $winner = 1;
-                $winnerName = $player1->getEmail();
+                $winnerName = $player1->getUsername();
             } else {
                 $winner = 2;
-                $winnerName = $player2->getEmail();
+                $winnerName = $player2->getUsername();
             }
         } else {
             if ($game->getPlayer1Bet() === 'CT') {
                 $winner = 2;
-                $winnerName = $player2->getEmail();
+                $winnerName = $player2->getUsername();
             } else {
                 $winner = 1;
-                $winnerName = $player1->getEmail();
+                $winnerName = $player1->getUsername();
             }
         }
 

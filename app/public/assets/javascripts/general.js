@@ -61,7 +61,7 @@ function refreshBalance() {
         if (response.data.status === false) {
             alert(response.data.error)
         } else {
-            document.getElementById('balance').innerText = response.data.balance + ' COINS'
+            document.getElementById('balanceRaw').innerText = response.data.balance
         }
     });
 }

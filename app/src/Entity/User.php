@@ -17,7 +17,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 180, unique: true)]
+    #[ORM\Column(length: 180, nullable: true)]
     private ?string $email = null;
 
     #[ORM\Column]
@@ -26,7 +26,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @var string The hashed password
      */
-    #[ORM\Column]
+    #[ORM\Column(nullable: true)]
     private ?string $password = null;
 
     #[ORM\Column(type: 'boolean')]
@@ -34,6 +34,21 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column]
     private ?float $balance = null;
+
+    #[ORM\Column(length: 255, unique: true, nullable: true)]
+    private ?string $steamid = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $username = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $steamurl = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $avatarurl = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $steamCountry = null;
 
     public function getId(): ?int
     {
@@ -125,6 +140,66 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setBalance(float $balance): self
     {
         $this->balance = $balance;
+
+        return $this;
+    }
+
+    public function getSteamid(): ?string
+    {
+        return $this->steamid;
+    }
+
+    public function setSteamid(?string $steamid): self
+    {
+        $this->steamid = $steamid;
+
+        return $this;
+    }
+
+    public function getUsername(): ?string
+    {
+        return $this->username;
+    }
+
+    public function setUsername(string $username): self
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    public function getSteamurl(): ?string
+    {
+        return $this->steamurl;
+    }
+
+    public function setSteamurl(?string $steamurl): self
+    {
+        $this->steamurl = $steamurl;
+
+        return $this;
+    }
+
+    public function getAvatarurl(): ?string
+    {
+        return $this->avatarurl;
+    }
+
+    public function setAvatarurl(?string $avatarurl): self
+    {
+        $this->avatarurl = $avatarurl;
+
+        return $this;
+    }
+
+    public function getSteamCountry(): ?string
+    {
+        return $this->steamCountry;
+    }
+
+    public function setSteamCountry(?string $steamCountry): self
+    {
+        $this->steamCountry = $steamCountry;
 
         return $this;
     }

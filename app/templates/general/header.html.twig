@@ -5,6 +5,10 @@
         <div class="header-element" onclick="redirectToRoute('{{ path('roulette', {}, relative = false) }}')">ROULETTE</div>
         <div class="header-element">DROPS</div>
         <div class="header-element">CRASH</div>
-        <div class="header-balance" id="balance" data-id="{{ app.user.id }}">{{ app.user.balance }} COINS</div>
+        {% if app.user is not null %}
+            <div class="header-balance" id="balance" data-id="{{ app.user.id }}">
+                <div id="balanceRaw">{{ app.user.balance }}</div> <img src="{{ asset('assets/img/general/diamond.png') }}" class="diamond">
+            </div>
+        {% endif %}
     </div>
 </div>
